@@ -1,6 +1,7 @@
 function Add(num) {
-  document.form.text_field.value = 
-  document.form.text_field.value + num;
+  let value=document.form.text_field.value;
+  value = value + num;
+  document.form.text_field.value=value;
 }
 
 function Clear() {
@@ -20,3 +21,6 @@ function Equal() {
     document.form.text_field.value=eval(text);
   }
 }
+
+/*Helper function*/
+
