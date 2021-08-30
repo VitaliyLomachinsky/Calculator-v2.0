@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator 2.0</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="wrapper">
+        <div class="item result">
+          <form name="form">
+            <input type="text" name="text_field" readonly />
+          </form>
+        </div>
+        <div class="item" onclick="Add('+')" >+</div>
+        <div class="item" onclick="Add('-')" >-</div>
+        <div class="item" onclick="Add('*')" >&times;</div>
+        <div class="item" onclick="Add('/')" >&divide;</div>
+        <div class="item" onclick="Add('7')" >7</div>
+        <div class="item" onclick="Add('8')" >8</div>
+        <div class="item" onclick="Add('9')" >9</div>
+        <div class="item" onclick="Add('(')" >(</div>
+        <div class="item" onclick="Add('4')" >4</div>
+        <div class="item" onclick="Add('5')" >5</div>
+        <div class="item" onclick="Add('6')" >6</div>
+        <div class="item" onclick="Add(')')" >)</div>
+        <div class="item" onclick="Add('1')" >1</div>
+        <div class="item" onclick="Add('2')" >2</div>
+        <div class="item" onclick="Add('3')" >3</div>
+        <div class="item equal" onclick="Equal()">=</div>
+        <div class="item zero" onclick="Add('0')">0</div>
+        <div class="item" onclick="Add('.')" >.</div>
+        <div class="item clear" onclick="Clear()">C</div>
+        <div class="item backspace" onclick="BackSpace()">&#129044;</div>
+      </div>
+    </div>
+    <script src="/JS/action.js"></script>
+  </body>
+</html>
