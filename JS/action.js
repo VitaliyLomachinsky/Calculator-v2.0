@@ -1,3 +1,5 @@
+let Number_of_symbols_for_speckles=5;
+
 function Add(num) {
   let value=document.form.text_field.value;
   value = value + num;
@@ -18,9 +20,23 @@ function BackSpace() {
 function Equal() {
   let text=String(document.form.text_field.value);
   if(text){
-    document.form.text_field.value=eval(text);
+    text=eval(text);
+    text=Check_Number_of_symbols_for_speckles(text);
+    document.form.text_field.value=text;
   }
 }
 
 /*Helper function*/
+function Set_Number_of_symbols_for_speckles(){
+  
+}
+
+function Check_Number_of_symbols_for_speckles(input){
+  let value=String(input);
+
+  if(value.indexOf('.')>-1){
+    value=value.slice(0,value.indexOf('.')+(+Number_of_symbols_for_speckles+1));
+  }
+  return value;
+}
 
