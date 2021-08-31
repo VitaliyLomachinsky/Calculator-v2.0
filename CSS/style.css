@@ -10,6 +10,7 @@ body{
 .calculator{
   display: flex;
   justify-content: center;
+  position:relative;
 }
 
 .wrapper{
@@ -96,3 +97,72 @@ form{
   background-color: #C6D166;
   border: 1px solid #5C821A;
 }
+/*Drop-Down-Menu*/
+
+.settings{
+  position: absolute;
+  margin-top: 7px;
+  margin-right: 106px;
+  color:white;
+  width: 400px;
+    
+}
+.settings-up{
+  margin-right: 200px;
+}
+
+.settings-btn{
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 26px;
+  background-color: #19A899;
+  border: 1px solid #0F1B07;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+}
+
+.drop-down{
+  background-color: #5C821A;
+  display: block;
+  width: 400px;
+  font-size: 20px;
+  padding: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #0F1B07;
+  display: none;
+}
+.drop-down-show{
+  display:block;
+}
+
+
+.slider-container{
+  width:400px;
+  display: inline-block;
+  margin: 10px 0px;
+ 
+}
+.slider{
+  width: 370px;
+  border-radius: 5px;
+  background-color: #DBF22C;
+  outline: none;
+  -webkit-transition: .4s;
+  transition: opacity .4s;
+}
+
+.value-par{
+  width: auto;
+  display: inline;
+}
+
+#demo{
+  width: 10px;
+  display: inline;
+}
+
